@@ -1,0 +1,7 @@
+{
+  "name": "NC-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

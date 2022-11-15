@@ -1,0 +1,24 @@
+ion-tabs{
+    ion-tab-bar{
+        width: 96%;
+        margin: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        
+        ion-tab-button{
+            background-color: rgb(128, 136, 245);
+            ion-icon{
+                font-size: 1.3rem; 
+                color: rgb(255, 255, 255);
+            }
+        }
+        ion-tab-button[aria-selected=true]{
+                ion-icon{
+                    border: 1px solid rgba(111, 108, 240, 0.2);
+                    border-radius: 50px;
+                    padding: 7px;
+                    background: linear-gradient(315deg, rgba(220, 237, 247, 0.2)0%, rgba(217, 214, 255, 0.2)74%);
+                }
+            }
+    }
+}

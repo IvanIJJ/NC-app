@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Report Incident</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-segment
+  mode="md" 
+  (ionChange)="segmentChanged($event)" 
+  [(ngModel)]="segmentValue" 
+  class="ion-padding-horizontal">
+  <ion-segment-button value="1">
+    <ion-label>Report Incident</ion-label>
+  </ion-segment-button>
+  
+  <ion-segment-button value="2">
+    <ion-label>Query Incident</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+
+
+<ion-grid *ngIf="segmentValue == '1'">
+  <ion-item class="label">
+    <ion-label position="floating" color="medium" >Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="label">
+    <ion-label position="floating" color="medium" >Surname</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="label">
+    <ion-label position="floating" color="medium" >Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-select [(ngModel)]="selectedVal" (ionChange)="OnChange($event)" interface="popover" placeholder="Please select incident ">
+          <ion-select-option *ngFor="let item of data" [value]="item.id">
+            {{item.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  
+  <div class="container">
+    <ion-button class="button2" >From Camera</ion-button>
+    <ion-button class="button2">From Galery</ion-button>
+  </div>
+  
+  <ion-item class="label">
+    <ion-label position="floating" color="medium">Street Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="label">
+    <ion-label position="floating" color="medium" >Suburb Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="label">
+    <ion-label position="floating" color="medium" >City Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <ion-button class="button"><h4>Report !!!</h4></ion-button>
+</ion-grid>
+
+</ion-content>

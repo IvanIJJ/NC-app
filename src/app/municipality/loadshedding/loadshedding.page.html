@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Loadshedding & Water Outages  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-segment
+  mode="md" 
+  (ionChange)="segmentChanged($event)" 
+  [(ngModel)]="segmentValue" 
+  class="ion-padding-horizontal">
+  <ion-segment-button value="1">
+    <ion-label>Loadshedding</ion-label>
+  </ion-segment-button>
+
+  <ion-segment-button value="2">
+    <ion-label>Water Outages</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-grid *ng If="segmentValue == '1'">
+  <ion-list>
+    <ion-item *ngFor="let employee of employees">
+      <ion-label>{{employee.name}}</ion-label>
+      <ion-label>{{employee.position}}</ion-label>
+      <ion-label>{{employee.department}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-grid> -->
+
+<ion-segment
+mode="md" 
+(ionChange)="segmentChanged($event)" 
+[(ngModel)]="segmentValue" 
+class="ion-padding-horizontal">
+<ion-segment-button value="1">
+  <ion-label>Loadshedding</ion-label>
+</ion-segment-button>
+
+<ion-segment-button value="2">
+  <ion-label>Water cuts</ion-label>
+</ion-segment-button>
+</ion-segment>
+
+
+
+<ion-grid *ngIf="segmentValue == '1'">
+<ion-searchbar placeholder='Try"Kimberley"' 
+                [(ngModel)]="searchTerm"
+                showCancelButton="focus"
+                animated></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let loadshedding of loadshedding | filter:searchTerm">
+      <ion-label>{{loadshedding.Place}}</ion-label>
+      <ion-label>{{loadshedding.Date}}</ion-label>
+      <ion-label>{{loadshedding.Time}}</ion-label>
+      <ion-label>{{loadshedding.Stage}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-grid>
+
+<ion-grid *ngIf="segmentValue == '2'">
+<ion-searchbar placeholder='Try"Kimberley"' 
+                [(ngModel)]="searchTerm"
+                showCancelButton="focus"
+                animated></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let watercuts of watercuts | filter:searchTerm">
+      <ion-label>{{watercuts.Place}}</ion-label>
+      <ion-label>{{watercuts.Date}}</ion-label>
+      <ion-label>{{watercuts.Time}}</ion-label>
+      <ion-label>{{watercuts.Stage}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-grid>
+
+
+
+
+</ion-content>

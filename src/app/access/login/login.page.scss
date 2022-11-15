@@ -1,0 +1,125 @@
+.heading{
+    text-align: center;
+    p{
+      color: #838383;  
+    }
+}
+
+
+.social-login{
+  text-align: center;
+  margin-top: 40px;
+
+  p{
+      color: #838383;
+  }
+  ion-button{
+      width: 40%;
+      height: 35px;
+      ion-icon{
+          font-size: 1.8rem;
+      }
+  }
+  .twitter{
+  --background:#00acee;
+  margin-right: 14px;
+  }
+  .facebook{
+  --backround:#4267b2; 
+  }
+}
+
+.email-login{
+  margin-top: 45px;
+  text-align: center;
+  p{
+    color:#838383;
+  }
+
+  .formfield{
+  position: relative;
+  margin: auto;
+  padding: 0px;
+  border: 0px ;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+
+.formfield > input{
+  padding: 1.4em;
+  margin: 0.5em;
+  width: 87%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.formfield > label{
+  padding: 1.4em;
+  margin: 0.5em;
+  width: 87%;
+  
+  
+}
+
+
+
+.formfield > label{
+  position: absolute;
+  top: 0;
+  bottom: 0;  
+  left: 0;
+  text-align: start;
+  color: rgb(129, 128, 128);
+  padding-left:40px;
+}
+
+input:focus + label,
+input:valid + Label{
+  font-size: 1rem;
+  width: auto;
+  height: 1.3em;
+  padding: 0px 0.0px 0px 0.0px;
+  margin: 0px;
+  background-color: #ffffff;
+transition: 0.2s ease-in-out;
+  top: 0em;
+  left: 2em;
+
+} 
+}
+
+.other-links{
+  margin-left: 7%;
+  display: flex;
+  justify-content: space-between;
+  .remember-me{
+    display: flex;
+    align-items: center;
+    p{
+      margin-left: 10px !important;
+
+    }
+  }
+  .forgot{
+    margin-right: 10%;
+  }
+}
+
+.loginbtn{
+  text-align: center;
+  margin-top: 25px;
+  .login{
+    width: 85%;
+    height: 50px;
+    text-transform: none;
+    font-size: 1.6rem;
+  }
+  p{
+    color:#838383 ;
+    span{
+      color: #838383;
+    }
+  }
+}
+

@@ -1,0 +1,114 @@
+ion-slides {
+    height: 30%;
+
+  }
+  
+  .bg-1 {
+    // background-color: #00acc1;
+    background-image: url('../../assets/images/1.jpg');
+    background-size: cover;
+    border-radius:0px 0px 10px 10px ;
+    height: 15rem;
+  }
+  .bg-2 {
+    // background-color: #fbc02d;
+    background-image: url('../../assets/images/2.jpg');
+    background-size: cover;
+    border-radius:0px 0px 10px 10px ;
+    height: 15rem;
+  }
+  .bg-3 {
+    // background-color: #7cb342;
+    background-image: url('../../assets/images/3.jpg');
+    background-size: cover;
+    border-radius:0px 0px 10px 10px ;
+    height: 15rem;
+  }
+  
+  .slide-text{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: aliceblue;
+  }
+  .slide-text0{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: aliceblue;
+      margin-left: -6rem;
+  }
+
+  .slide-text1{
+      margin-top: 6rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: aliceblue;
+      margin-left: -10.8rem;
+  }
+  .slide-text2{
+      margin-top: 6rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: aliceblue;
+      margin-left: -7rem;
+  }
+  .slide-text3{
+      margin-top: 6rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: aliceblue;
+      margin-left: -10rem;
+  }
+
+  .box{
+    border-width: 0.1rem;
+    width:15rem ;
+    height:10rem ;
+    border-radius:1rem ;
+    border-color: rgb(173, 172, 172);
+    border-style: solid;
+    margin-left: 15%;
+    margin-top: 4%;
+    
+}
+
+h6{
+    margin-left: 1.3rem;
+    margin-top: 1.5rem;
+    color: rgb(90, 88, 88);
+    font-weight: bold;
+    
+
+}
+
+.img1{
+    width: 10rem;
+    height: 8rem;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+}
+.img2{
+    width: 10rem;
+    height: 9rem;
+    margin-left: 2.5rem;
+    margin-top: 0;
+}
+
+#b1{
+width: 10rem;
+height: rem;
+}
+p{
+color: darkgray;
+}
+.p1{
+ margin-left: 4.3rem;
+ margin-top: 0rem;
+}
+.p2{
+ margin-left: 3rem;
+ margin-top: -0.5rem;
+}
+.p3{
+ margin-left: 4.5rem;
+ margin-top: 0rem;
+}
